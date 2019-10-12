@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include includes/header.html %}
+<div class="container">
+    {{ content }}
+    <hr>
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p><a href="http://osuai.club" target="_blank">Oregon State University Artificial Intelligence Club</a> <i class="fal fa-copyright" aria-hidden="true"></i> {{site.time | date: '%Y'}}.</p>
+                </div>
+                <div class="col-12 text-center" id="social-list">
+                    {% for social in site.data.about.socials %}
+                        <a href="{{ social.link }}" id="{{ social.icon }}" class="social-btn" target="_blank"><i class="fab fa-{{ social.icon }}" aria-hidden="true"></i></a>
+                    {% endfor %}
+                    <a href="mailto:contact@osuai.club" id="email-icon" class="social-btn" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                </div>
+                <div class="col-12 text-center" id="source-code">
+                    <p><a href="https://github.com/osuai-club/osuai-club.github.io" target="_blank"><i class="fal fa-file-code"></i> Source Code</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+{% include includes/footer.html %}
+</html>

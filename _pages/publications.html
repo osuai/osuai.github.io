@@ -1,0 +1,41 @@
+---
+layout: default
+title: Publications
+permalink: /publications/
+---
+<div id="publications">
+    <div class="col-12 mt-5">
+        <h5>By category:</h5>
+        <hr>
+    </div>
+    {% for category in site.categories %}
+        {% assign cat = category | first %}
+        {% if cat != "hidden" %}
+            {% if cat != "Lectures" %}
+                <h4 class="text-center" id="{{ category[0] | slugify }}">{{ category | first }}</h4>
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th scope="col">Date</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">Author</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for post in category[1] %}
+                        <tr>
+                            <td scope="row">{{ post.date | date: "%B %-d, %Y" }}</td>
+                            <td><a href="{{ post.url }}" target="_blank">{{ post.title }}</a></td>
+                            <td>
+                                {% for author in post.authors %}
+                                <em>{{ author }}</em>{% if forloop.last == false %},{% endif %} 
+                                {% endfor %}</span>
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            {% endif %}
+        {% endif %}
+    {% endfor %}
+</div>  

@@ -1,0 +1,98 @@
+/***************************************************/
+/****************** GENERAL STYLE ******************/
+/***************************************************/
+/*
+  minimal style
+*/
+@import "/assets/main.css";
+/*
+  reset
+*/
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #fff;
+  color: #000;
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+nav,
+code,
+a,
+a:visited,
+a:hover,
+a:focus,
+div,
+caption {
+  color: #000;
+}
+p {
+  text-indent: 2em;
+}
+/* first paragraph don't indent */
+h1+p,
+h2+p,
+h3+p,
+h4+p,
+blockquote+p,
+.specialbox+p {
+  text-indent: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  padding: 0;
+  margin: 0;
+}
+ul, ol {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+nav {
+  font-variant: small-caps;
+}
+h1, h2, h3, h4, h5, nav a, footer p, footer a, th{
+  font-family: 'Roboto Slab', serif !important;
+}
+.navbar-dark{
+  background-color: #D73F08 !important;
+}
+h3 {
+  color: #D73F08;
+}
+a {
+  color: #D73F08 !important;
+}
+a:hover {
+  color: #812605 !important;
+}
+.btn-primary {
+  color: white !important;
+  background-color: #D73F08 !important;
+  border-color: #D73F08 !important;
+}
+.btn-primary:hover {
+  color: white !important;
+  background-color: #812605 !important;
+  border-color: #812605 !important;
+}
+nav a{
+  color: white !important;
+}
+nav a:hover{
+  color: white !important;
+}

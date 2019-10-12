@@ -1,0 +1,65 @@
+---
+layout: default
+title: Lectures
+permalink: /lectures/
+---
+<div id="lectures">
+    <h3>Schedule</h3>
+    <h4 class="text-center">2019-2020</h4>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th scope="col">Date</th>
+                <th scope="col">Description</th>
+                <th scope="col">Course Materials</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for category in site.categories %}
+                {% assign cat = category | first %}
+                {% if cat == "Lectures" %}
+                    {% for post in category[1] %}
+                    <tr>
+                        <td scope="row">{{ post.date | date: "%B %-d, %Y" }}</td>
+                        <td><a href="{{ post.url }}" target="_blank">{{ post.title }}</a></td>
+                        <td>
+                            {% for material in post.materials %}
+                            <a href="{{ material.link }}" target="_blank">
+                                <i class="fal fa-{{ material.icon }}"></i>{{ material.title }}
+                            </a>
+                            {% endfor %}
+                        </td>
+                    </tr>
+                    {% endfor %}
+                {% endif %}
+            {% endfor %}
+        </tbody>
+    </table>
+    {% for academic in site.data.lectures %}
+    <h4 class="text-center">{{ academic.year }}</h4>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th scope="col">Date</th>
+                <th scope="col">Description</th>
+                <th scope="col">Course Materials</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for member in academic.club %}
+            <tr>
+                <td scope="row">{{ member.date }}</td>
+                <td>{{ member.title }}</td>
+                <td>
+                    {% for material in member.materials %}
+                    <a href="{{ material.link }}" target="_blank">
+                        <i class="fal fa-{{ material.icon }}"></i>{{ material.title }}
+                    </a>
+                    {% endfor %}
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    {% endfor %}
+</div>  

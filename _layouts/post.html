@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include includes/header.html %}
+<main class="container-fluid" id="post-content">
+    <div class="row">
+        <div class="col-12">
+            <div class="row">
+                <div class="col-md-2 sidebar">
+                </div>
+                <div class="col-md-8" id="page-body">
+                    <article class="row">
+                        <div class="col-12" id="page-metadata">
+                            <div class="row">
+                                <header class="col-12" id="page-header">
+                                    <h1>{{ page.title }}</h1>
+                                </header>
+                                <div class="col-12" id="page-abstract">
+                                    <p>
+                                        <span id="abstract"><em>{{ page.abstract }}</em></span>
+                                    </p>
+                                </div>
+                                <div class="col-12" id="page-authors">
+                                    <p>
+                                        authors:<span id="authors">
+                                        {% for author in page.authors %}
+                                        <em>{{ author }}</em>{% if forloop.last == false %},{% endif %} 
+                                        {% endfor %}</span>
+                                    </p>
+                                </div>
+                                <div class="col-12">
+                                    <p>
+                                        created: <span id="page-created"><em>{{ page.date | date: "%B %-d, %Y" }}</em></span>;
+                                        modified: <span id="page-modified"></span>;
+                                        <script>
+                                            var pageModified = document.getElementById("page-modified");
+                                            pageModified.innerHTML = `<em><a href="https://github.com/osuai-club/osuai-club.github.io/commits/master/{{ page.path }}">{{ page.modified | date: "%B %-d, %Y"  }}</a></em>`;
+                                        </script>
+                                        status: <span id="page-status"><em>{{ page.status }}</em></span>
+                                        <!-- <a href="https://madebymaze.xyz/site/#confidence">confidence:</a> <span id="page-confidence"><em>{{ page.confidence }}</em></span>;
+                                        <a href="https://madebymaze.xyz/site/#importance">importance:</a> <span id="page-importance"><em>{{ page.importance }}</em></span> -->
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12" id="page-content">
+                            <div id="table-of-content">
+                                <ol id="toc" data-toc="#markdown-content"></ol>
+                            </div>
+                            <div id="markdown-content">
+                                {{ content }}
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-2 sidebar">
+                </div>
+            </div>
+        </div>
+        {% if page.comments == true %}
+        <footer class="col-12" style="background: white"id="disqus_thread">
+            <script>
+            var disqus_config = function () {
+                this.page.url = "https://madebymaze.xyz/{{ page.url }}";  // Replace PAGE_URL with your page's canonical URL variable
+                this.page.identifier = "{{ page.url }}"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+            };
+            (function() { // DON'T EDIT BELOW THIS LINE
+                var d = document, s = d.createElement('script');
+                s.src = 'https://madebymaze-xyz.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        </footer>
+        {% endif %}
+    </div>
+</main>
+{% include includes/footer.html %}
+</html>

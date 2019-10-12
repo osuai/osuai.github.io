@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-09-12T11:14:07-07:00</updated><id>http://localhost:4000/</id><title type="html">Mazen’s Space</title><subtitle>I like Deep Learning</subtitle><entry><title type="html">Zero to Hero</title><link href="http://localhost:4000/zero-to-hero/" rel="alternate" type="text/html" title="Zero to Hero" /><published>2018-11-14T00:00:00-08:00</published><updated>2018-11-14T00:00:00-08:00</updated><id>http://localhost:4000/zero-to-hero</id><content type="html" xml:base="http://localhost:4000/zero-to-hero/">&lt;h1 id=&quot;introduction-to-project&quot;&gt;Introduction to Project&lt;/h1&gt;
+&lt;div class=&quot;specialbox hintbox mt-2&quot;&gt;
+    &lt;p&gt;
+        &lt;i class=&quot;fas fa-info-circle&quot;&gt;&lt;/i&gt;
+        The program &lt;code&gt;nvidia-smi&lt;/code&gt; allows you to monitor your GPU utilization and can help you understand bottlenecks in your data pipeline. The average GPU utilization should usually be above 70-80%.
+    &lt;/p&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;The software described in this document, Facial Detector and Obfuscator, is a project under the advisement of Chanho Kim (Georgia Tech) and Dr. Fuxin Li (Oregon State University). The client for this project is the City of Portland, which wants a proof of concept for a way to transform the data from their traffic cameras so the city may store the data without storing identifying information about the citizens in the footage. The software will be based largely on &lt;em&gt;YOLOv3&lt;/em&gt;&lt;a href=&quot;#ref-1&quot;&gt;[1]&lt;/a&gt;.&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+v(t_1) &amp;= v(t_0) + \int_{t_0}^{t_1} a(t) dt \\  
+x(t_1) &amp;= x(t_0) + \int_{t_0}^{t_1} v(t) dt \\
+\end{align} %]]&gt;&lt;/script&gt;
+
+&lt;table id=&quot;table-0&quot;&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;First Header&lt;/th&gt;
+      &lt;th&gt;Second Header&lt;/th&gt;
+      &lt;th&gt;Third Header&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;First row&lt;/td&gt;
+      &lt;td&gt;Data&lt;/td&gt;
+      &lt;td&gt;Very long data entry&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Second row&lt;/td&gt;
+      &lt;td&gt;&lt;strong&gt;Cell&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;em&gt;Cell&lt;/em&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Third row&lt;/td&gt;
+      &lt;td&gt;Cell that spans across two columns&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;script type=&quot;text/javascript&quot;&gt;
+    var table = document.getElementById(&quot;table-0&quot;).createCaption();;
+    table.innerHTML = &quot;&lt;strong&gt;Table 0:&lt;/strong&gt; attadad&quot;
+&lt;/script&gt;
+
+&lt;pre id=&quot;read-1&quot; style=&quot;display:none;&quot;&gt;
+    
+\begin{algorithm}
+\caption{Quicksort}
+\begin{algorithmic}
+\PROCEDURE{Quicksort}{$A, p, r$}
+    \IF{$p &amp;lt; r$} 
+        \STATE $q = $ \CALL{Partition}{$A, p, r$}
+        \STATE \CALL{Quicksort}{$A, p, q - 1$}
+        \STATE \CALL{Quicksort}{$A, q + 1, r$}
+    \ENDIF
+\ENDPROCEDURE
+\PROCEDURE{Partition}{$A, p, r$}
+    \STATE $x = A[r]$
+    \STATE $i = p - 1$
+    \FOR{$j = p$ \TO $r - 1$}
+        \IF{$A[j] &amp;lt; x$}
+            \STATE $i = i + 1$
+            \STATE exchange
+            $A[i]$ with     $A[j]$
+        \ENDIF
+        \STATE exchange $A[i]$ with $A[r]$
+    \ENDFOR
+\ENDPROCEDURE
+\end{algorithmic}
+\end{algorithm}
+
+&lt;/pre&gt;
+&lt;div class=&quot;markdown-pseudocode&quot; id=&quot;goal-1&quot;&gt;&lt;/div&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+    var code = document.getElementById(&quot;read-1&quot;).textContent;
+    var parentEl = document.getElementById(&quot;goal-1&quot;);
+    var options = {
+        lineNumber: true
+    };
+    pseudocode.render(code, parentEl, options);
+&lt;/script&gt;
+
+&lt;figure class=&quot;image&quot; id=&quot;img-1&quot;&gt;
+    &lt;img src=&quot;https://www.gwern.net/images/silkroad/2012-christin-sr-dailysales.png&quot; alt=&quot;I love it&quot; /&gt;
+    &lt;figcaption&gt;&lt;strong&gt;Figure 1:&lt;/strong&gt; I love it&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;&lt;a href=&quot;#img-1&quot;&gt;Figure 1&lt;/a&gt;
+&lt;a href=&quot;#table-1&quot;&gt;table 1&lt;/a&gt;&lt;/p&gt;
+
+&lt;div class=&quot;embed-responsive embed-responsive-16by9 mb-2&quot;&gt;
+    &lt;iframe class=&quot;embed-responsive-item&quot; src=&quot;https://www.youtube.com/embed/DM0nkQxrpW0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# import relevant libraries&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;roslib&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;rospy&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;math&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;mb_callback&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;msg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+  &lt;span class=&quot;c&quot;&gt;# Check if robot has reached goal&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;msg&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;status&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;status&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;or&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;msg&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;status&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;status&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;or&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;msg&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;status&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;status&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;or&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;msg&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;status&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;status&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Robot failed to reach waypoint!&quot;&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;elif&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;msg&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;status&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;status&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Robot successfully reached waypoint!&quot;&lt;/span&gt;
+  
+  &lt;span class=&quot;n&quot;&gt;pub&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;publish&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;waypoint&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;output&gt;Using TensorFlow backend.&lt;/output&gt;
+
+&lt;div class=&quot;specialbox hintbox mt-2&quot;&gt;
+    &lt;p&gt;
+        &lt;i class=&quot;fas fa-info-circle&quot;&gt;&lt;/i&gt;
+        The program &lt;code&gt;nvidia-smi&lt;/code&gt; allows you to monitor your GPU utilization and can help you understand bottlenecks in your data pipeline. The average GPU utilization should usually be above 70-80%.
+    &lt;/p&gt;
+&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Ah! let not Censure term our fate our choice, / The stage but echoes back the public’s voice; The drama’s laws the drama’s patrons give, / For we that live to please must please to live.&lt;br /&gt; &lt;a href=&quot;wikipedia.org/wiki/&quot;&gt;Samuel Johnson&lt;/a&gt;(“Prologue at the Opening of Drury Lane Theatre”)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h1 id=&quot;footnotes&quot;&gt;Footnotes&lt;/h1&gt;
+
+&lt;ol id=&quot;page-footnotes&quot;&gt;
+&lt;li id=&quot;ref-1&quot;&gt;&lt;p&gt;https://www.youtube.com/watch?v=Q8nhQSp__3s&amp;amp;list=WL&amp;amp;index=11&lt;a href=&quot;#text-ref-1&quot;&gt;&lt;i class=&quot;fas fa-level-up-alt&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+    var links = document.getElementsByTagName(&quot;a&quot;);
+    for(var i = 0; i &lt; links.length; i++) {
+        if( links[i].getAttribute(&quot;href&quot;) === &quot;#ref-1&quot; ) {
+            links[i].id = &quot;text-ref-1&quot;;
+        }
+    } 
+&lt;/script&gt;
+&lt;/ol&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</content><author><name>Mazen Alotaibi</name></author><summary type="html">Introduction to Project The program nvidia-smi allows you to monitor your GPU utilization and can help you understand bottlenecks in your data pipeline. The average GPU utilization should usually be above 70-80%.</summary></entry><entry><title type="html">Overview</title><link href="http://localhost:4000/overview/" rel="alternate" type="text/html" title="Overview" /><published>2018-11-14T00:00:00-08:00</published><updated>2018-11-14T00:00:00-08:00</updated><id>http://localhost:4000/overview</id><content type="html" xml:base="http://localhost:4000/overview/">&lt;h1 id=&quot;officers&quot;&gt;Officers&lt;/h1&gt;
+&lt;h2 id=&quot;mazen-alotaibi&quot;&gt;Mazen Alotaibi&lt;/h2&gt;
+
+&lt;h2 id=&quot;jonathan-koning&quot;&gt;Jonathan Koning&lt;/h2&gt;
+
+&lt;h1 id=&quot;lectures&quot;&gt;Lectures&lt;/h1&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Date&lt;/th&gt;
+      &lt;th&gt;Lecture&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;9/26&lt;/td&gt;
+      &lt;td&gt;0&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;10/3&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;10/10&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;10/17&lt;/td&gt;
+      &lt;td&gt;3&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;10/24&lt;/td&gt;
+      &lt;td&gt;4&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;10/31&lt;/td&gt;
+      &lt;td&gt;5&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;11/7&lt;/td&gt;
+      &lt;td&gt;6&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;11/14&lt;/td&gt;
+      &lt;td&gt;7&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;11/21&lt;/td&gt;
+      &lt;td&gt;8&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;11/28&lt;/td&gt;
+      &lt;td&gt;9&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;12/5&lt;/td&gt;
+      &lt;td&gt;10&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h1 id=&quot;groups&quot;&gt;Groups&lt;/h1&gt;
+&lt;h2 id=&quot;study-groups&quot;&gt;Study Groups&lt;/h2&gt;
+&lt;h2 id=&quot;reading-group&quot;&gt;Reading Group&lt;/h2&gt;
+
+&lt;p&gt;We meet every&lt;/p&gt;
+
+&lt;h1 id=&quot;projects&quot;&gt;Projects&lt;/h1&gt;
+
+&lt;h1 id=&quot;competitions&quot;&gt;Competitions&lt;/h1&gt;
+&lt;h2 id=&quot;in-house-competitions&quot;&gt;In-house Competitions&lt;/h2&gt;
+&lt;p&gt;Club members will
+##&lt;/p&gt;</content><author><name>Mazen Alotaibi</name></author><summary type="html">Officers Mazen Alotaibi</summary></entry><entry><title type="html">Resources</title><link href="http://localhost:4000/resources/" rel="alternate" type="text/html" title="Resources" /><published>2018-11-14T00:00:00-08:00</published><updated>2018-11-14T00:00:00-08:00</updated><id>http://localhost:4000/resources</id><content type="html" xml:base="http://localhost:4000/resources/">&lt;h1 id=&quot;learning-materials&quot;&gt;Learning Materials&lt;/h1&gt;
+
+&lt;h2 id=&quot;fundelmentals&quot;&gt;Fundelmentals&lt;/h2&gt;
+
+&lt;h3 id=&quot;programming&quot;&gt;Programming&lt;/h3&gt;
+
+&lt;h3 id=&quot;mathematics&quot;&gt;Mathematics&lt;/h3&gt;
+
+&lt;h3 id=&quot;statistics&quot;&gt;Statistics&lt;/h3&gt;
+
+&lt;h3 id=&quot;computer-science&quot;&gt;Computer Science&lt;/h3&gt;
+
+&lt;h2 id=&quot;machine-learning-and-deep-learning&quot;&gt;Machine Learning and Deep Learning&lt;/h2&gt;
+
+&lt;h3 id=&quot;osu-courses&quot;&gt;OSU Courses&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Machine Learning and Data Mining (CS 434) [&lt;a href=&quot;https://github.com/madebymaze/Machine-Learning&quot;&gt;Repository of the course&lt;/a&gt;]&lt;/li&gt;
+  &lt;li&gt;Deep Learning (CS 419 for undergrad, CS 535 for grad)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;online-resources&quot;&gt;Online Resources&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Coursera (you can audit):
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://www.coursera.org/learn/machine-learning&quot;&gt;Machine Learning&lt;/a&gt;: Great course, explains everything in details clearly for Machine Learning. [Octave]&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://www.coursera.org/specializations/deep-learning&quot;&gt;Deep Learning Specialization&lt;/a&gt;: Best resouces that we recommend. Explains everything you need to know to build an entire pipeline with great exercises. [Python and Tensorflow 1.X]&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://www.coursera.org/specializations/tensorflow-in-practice&quot;&gt;TensorFlow in Practice Specialization&lt;/a&gt;: Simple course that explains TensorFlow 2.0 new APIs with general examples for different applications. [Python and Tensorflow 2.X]&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://course.fast.ai/&quot;&gt;Practical Deep Learning for Coders - fast.ai&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;books&quot;&gt;Books&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.amazon.com/Learning-McGraw-Hill-International-Editions-Computer/dp/0071154671/ref=sr_1_13?s=books&amp;amp;ie=UTF8&amp;amp;qid=1532029293&amp;amp;sr=1-13&amp;amp;keywords=Machine+Learning&quot;&gt;Machine Learning by Tom M. Mitchell&lt;/a&gt;: Old book, easy to understand.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.amazon.com/Pattern-Recognition-Learning-Information-Statistics/dp/0387310738/ref=la_B001IGLMNY_1_1?s=books&amp;amp;ie=UTF8&amp;amp;qid=1532029340&amp;amp;sr=1-1&quot;&gt;Pattern Recognition and Machine Learning by Christopher M. Bishop&lt;/a&gt;: Covers everything in Machine Learning, more in-depth understanding, uses a lot of mathematical terms and equations.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.amazon.com/Deep-Learning-Adaptive-Computation-Machine/dp/0262035618/ref=asap_bc?ie=UTF8&quot;&gt;Deep Learning by Ian Goodfellow, Yoshua Bengio, and Aaron Courville&lt;/a&gt;: Covers everything in Deep Learning with fundamentals.&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Mazen Alotaibi</name></author><summary type="html">Learning Materials</summary></entry></feed>

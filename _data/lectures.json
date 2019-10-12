@@ -1,0 +1,153 @@
+[
+    {
+        "year": "2017-2018 & 2018-2019",
+        "club":[
+        {
+            "title": "Quantum Neural Network and Soft Quantum Computing",
+            "date": "-",
+            "blog": "",
+            "materials": [
+                {
+                    "title": "Slides",
+                    "icon": "presentation",
+                    "link": "https://drive.google.com/a/oregonstate.edu/file/d/1tSdeSNxVPc8OBn4ltnSIVWpY0grneeow/view?usp=sharing"
+                }
+            ]
+        },
+        {
+            "title": "Brain Tumor Image Retrieval Review",
+            "date": "-",
+            "blog": "",
+            "materials": [
+                {
+                    "title": "Slides",
+                    "icon": "presentation",
+                    "link": "https://docs.google.com/presentation/d/1g_eQSwQMsSvLY1ovBbdylAnHzyilMvFZLUPHGDxF7_0/edit?usp=sharing"
+                }
+            ]
+        },
+        {
+            "title": "The Many Moods of Emotion",
+            "date": "-",
+            "blog": "",
+            "materials": [
+                {
+                    "title": "Slides",
+                    "icon": "presentation",
+                    "link": "https://drive.google.com/a/oregonstate.edu/file/d/1eleMjvz3Oj694HK1J6C4BjfBl25sqyKY/view?usp=sharing"
+                }
+            ]
+        },
+        {
+            "title": "One Shot Video Object Segmentation",
+            "date": "-",
+            "blog": "",
+            "materials": [
+                {
+                    "title": "Slides",
+                    "icon": "presentation",
+                    "link": "https://drive.google.com/a/oregonstate.edu/file/d/1U_D46F2gTKqIplUbeyasmqDkTVomAXnU/view?usp=sharing"
+                }
+            ]
+        },
+        {
+            "title": "Autonomous Vehicle Roadblocks",
+            "date": "-",
+            "blog": "",
+            "materials": [
+                {
+                    "title": "Slides",
+                    "icon": "presentation",
+                    "link": "https://drive.google.com/a/oregonstate.edu/file/d/191nsQ2gSx7EOOT16NZOuLiwn2uIi2zcI/view?usp=sharing"
+                }
+            ]
+        },
+        {
+            "title": "Survey of Image Segmentation for Brain Quantitative Analysis",
+            "date": "-",
+            "blog": "",
+            "materials": [
+                {
+                    "title": "Slides",
+                    "icon": "presentation",
+                    "link": "https://drive.google.com/a/oregonstate.edu/file/d/1si93Y7STD7k5cHaN_p5K0yFgtWP7uSX9/view?usp=sharing"
+                }
+            ]
+        },
+        {
+            "title": "Automated Prototype for Asteroids Detection",
+            "date": "-",
+            "blog": "",
+            "materials": [
+                {
+                    "title": "Slides",
+                    "icon": "presentation",
+                    "link": "https://drive.google.com/a/oregonstate.edu/file/d/1XwrWRE0ncsl9OwHtKm5n6hLLSIhUwZqH/view?usp=sharing"
+                }
+            ]
+        },
+        {
+            "title": "2017 Robotic Instrument Segmentation Challenge",
+            "date": "-",
+            "blog": "",
+            "materials": [
+                {
+                    "title": "Slides",
+                    "icon": "presentation",
+                    "link": "https://drive.google.com/a/oregonstate.edu/file/d/1KFKtW_HsRmx02X0PRmjwIZsEW5svrh0V/view?usp=sharing"
+                }
+            ]
+        },
+        {
+            "title": "ClaRAN: an AI galaxy identifier",
+            "date": "-",
+            "blog": "",
+            "materials": [
+                {
+                    "title": "Slides",
+                    "icon": "presentation",
+                    "link": "https://drive.google.com/a/oregonstate.edu/file/d/1-S--li35fCgaLdBrpw_KlUOuN2DEWCvI/view?usp=sharing"
+                }
+            ]
+        },
+        {
+            "title": "Understanding R-CNN",
+            "date": "-",
+            "blog": "",
+            "materials": [
+                {
+                    "title": "Slides",
+                    "icon": "presentation",
+                    "link": "https://drive.google.com/a/oregonstate.edu/file/d/1IbK2oVF3lwqEUBNjuerNcW0pVGD8a0DW/view?usp=sharing"
+                }
+            ]
+        },
+        {
+            "title": "Segnet",
+            "date": "-",
+            "blog": "",
+            "materials": [
+                {
+                    "title": "Slides",
+                    "icon": "presentation",
+                    "link": "https://drive.google.com/a/oregonstate.edu/file/d/164HVpgA0tjusNdIk3wdaD66riWMNjkbq/view?usp=sharing"
+                }
+            ]
+        },
+        {
+            "title": "SPEECH RECOGNITION WITH DEEP RECURRENT NEURAL NETWORKS",
+            "date": "-",
+            "blog": "",
+            "materials": [
+                {
+                    "title": "Slides",
+                    "icon": "presentation",
+                    "link": "https://drive.google.com/a/oregonstate.edu/file/d/1HSVRliGN_107Ba6CA8sxKt9-_KRXD0l6/view?usp=sharing"
+                }
+            ]
+        }
+        ],
+        "guest":[
+        ]
+    }
+]

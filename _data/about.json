@@ -1,0 +1,79 @@
+{
+  "leadership":{
+    "current": [
+     {
+       "name": "Mazen Alotaibi",
+       "position": "President",
+       "image": "alotaima.jpg",
+       "background": "alotaima-background.jpg",
+       "website": "https://madebymaze.xyz",
+       "socials": [
+          {
+            "icon": "github",
+            "link": "https://github.com/madebymaze"
+          },
+          {
+            "icon": "twitter",
+            "link": "https://twitter.com/madebymaze"
+          }
+       ]
+      }
+    ],
+    "previous": [
+      {
+        "year": "2018-2019",
+        "members": [
+          {
+            "name": "Bharath Padmaraju",
+            "position": "President",
+            "image": "bharath.jpg",
+            "background": "bharath-background.jpg",
+            "website": "#",
+            "socials": [
+              {
+                "icon": "github",
+                "link": "https://github.com/bharathpadmaraju"
+              }
+            ]
+          },
+          {
+            "name": "Mazen Alotaibi",
+            "position": "Vice-President",
+            "image": "alotaima.jpg",
+            "background": "alotaima-background.jpg",
+            "website": "https://madebymaze.xyz",
+            "socials": [
+              {
+                "icon": "github",
+                "link": "https://github.com/madebymaze"
+              },
+              {
+                "icon": "twitter",
+                "link": "https://twitter.com/madebymaze"
+              }
+            ]
+          },
+          {
+            "name": "Christian Gabor",
+            "position": "Vice-President",
+            "image": "gabor.jpg",
+            "background": "gabor-background.jpg",
+            "website": "#",
+            "socials": [
+              {
+                "icon": "github",
+                "link": "https://github.com/gaborchris"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "socials":[
+    {
+      "icon": "github",
+      "link": "https://github.com/osuai-club"
+    }
+  ]
+}
