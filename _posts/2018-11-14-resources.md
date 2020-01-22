@@ -16,7 +16,7 @@ importance: 3
 
 # Learning Materials
 
-## Fundelmentals
+## Fundamentals
 
 ### Programming
 
